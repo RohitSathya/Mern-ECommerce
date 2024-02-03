@@ -22,7 +22,7 @@ export default function login() {
     const[password,setpassword]=useState()
 
     async function submit(){
-      const response=await axios.post('http://192.168.0.137:8080/product/login',{email:email,password:password})
+      const response=await axios.post('https://ecomercebackend-brown.vercel.app/product/login',{email:email,password:password})
       const {message}=response.data
       if(message=='failed'){
         alert('wrong email and password')
