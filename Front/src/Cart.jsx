@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Cart({func,funce}) {
   const navigate=useNavigate()
   const dispatch=useDispatch()
-  const reduxtotal=useSelector((state)=>state.total.total)
+  const reduxtotal=useSelector((state)=>state.total.total).toFixed(2)
   const reduxeachtotal=useSelector((state)=>state.total.eachtotal)
       
    const [cart,setcart]=useState([])
