@@ -32,7 +32,7 @@ export default function Cart({func,funce}) {
         try{
           const userdetail=localStorage.getItem('userdetail')
           const parse=JSON.parse(userdetail)
-            const response=await axios.get(`http://localhost:8080/product/getcart/${parse._id}`)
+            const response=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
          
             if(response.data.length!=undefined){
               setcart(response.data)
@@ -98,14 +98,14 @@ export default function Cart({func,funce}) {
     console.log(e)
     const userdetail=localStorage.getItem('userdetail')
     const parse=JSON.parse(userdetail)
-    const deleteresponse=await axios.delete(`http://localhost:8080/product/deletecart/${parse._id}/${e}`)
+    const deleteresponse=await axios.delete(`https://ecomerce-backend-1zbn.onrender.com/product/deletecart/${parse._id}/${e}`)
     const {message}=deleteresponse.data
     if(message=='s'){
       console.log('vikram')
       const userdetail=localStorage.getItem('userdetail')
       const parse=JSON.parse(userdetail)
        
-      const response=await axios.get(`http://localhost:8080/product/getcart/${parse._id}`)
+      const response=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
      
             
       setcart(response.data)
@@ -148,7 +148,7 @@ export default function Cart({func,funce}) {
       if(fl==0){
         const userdetail=localStorage.getItem('userdetail')
         const parse=JSON.parse(userdetail)
-          const response=await axios.get(`http://localhost:8080/product/getcart/${parse._id}`)
+          const response=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
         
         func(total)
         funce(response.data)
@@ -158,7 +158,7 @@ export default function Cart({func,funce}) {
        else{
         const userdetail=localStorage.getItem('userdetail')
         const parse=JSON.parse(userdetail)
-          const response=await axios.get(`http://localhost:8080/product/getcart/${parse._id}`)
+          const response=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
         console.log('total is'+total)
         console.log('total is'+reduxtotal)
         func(reduxtotal)
