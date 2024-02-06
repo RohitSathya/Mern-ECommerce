@@ -23,7 +23,7 @@ const [password,setpassword]=useState()
 
 async function submit(){
   
-  const response=await axios.post('http://192.168.0.137:8080/product/register',{name:name,phoneno:phoneno,email:email,password:password})
+  const response=await axios.post('https://ecomerce-backend-1zbn.onrender.com/product/register',{name:name,phoneno:phoneno,email:email,password:password})
   const {message}=response.data
   if(message=='failed'){
     alert('sorry create another email already exists')
