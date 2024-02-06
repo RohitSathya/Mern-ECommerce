@@ -44,13 +44,13 @@ function products({data,func,namefunc,pi}){
        
       
         try{
-          const response=await axios.post('http://localhost:8080/product/cart',{name:data.name,category:data.category,price:data.price,image:data.image,uid:parse._id})
+          const response=await axios.post('https://ecomerce-backend-1zbn.onrender.com/product/cart',{name:data.name,category:data.category,price:data.price,image:data.image,uid:parse._id})
           const {message}=response.data
           if(message=='f'){
             alert('Product already have been added to cart')
           }
           else{
-            const count=await axios.get(`http://localhost:8080/product/getcart/${parse._id}`)
+            const count=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
             dispatch(fastcount())
          
             func(count.data.length)
