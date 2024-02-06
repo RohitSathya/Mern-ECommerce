@@ -10,7 +10,7 @@ export default function DisplayOrder({data,func}) {
      
     const userdetail=localStorage.getItem('userdetail')
     const parse=JSON.parse(userdetail)
-    const response=await axios.delete(`http://localhost:8080/product/deleteorder/${parse._id}/${data._id}`)
+    const response=await axios.delete(`https://ecomerce-backend-1zbn.onrender.com/product/deleteorder/${parse._id}/${data._id}`)
     const {message}=response.data
     if(message=='s'){
       dispatch(fastcount())
