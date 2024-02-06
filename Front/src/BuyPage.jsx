@@ -129,7 +129,7 @@ export default function BuyPage({data,data2,func}) {
     const parse=JSON.parse(userdetail)
    async function dcart(){
  
-     const res=await axios.delete(https://ecomerce-backend-1zbn.onrender.com/product/dcart/${parse._id}`)
+     const res=await axios.delete(`https://ecomerce-backend-1zbn.onrender.com/product/dcart/${parse._id}`)
      const {message}=res.data
      if(message=='s'){
       dispatch(fastcount())
