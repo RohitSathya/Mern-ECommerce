@@ -13,7 +13,7 @@ export default function Myoder() {
     const parse=JSON.parse(userdetail)
     
     async function getorder(){
-      const response=await axios.get(`http://localhost:8080/product/getorder/${parse._id}`)
+      const response=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getorder/${parse._id}`)
       const {message}=response.data
       if(message=='f'){
         setres('f')
