@@ -19,7 +19,7 @@ export default function ProductInfo({data}) {
       alert('Product already have been added to cart')
     }
     else{
-      const count=await axios.get(`http://localhost:8080/product/getcart/${parse._id}`)
+      const count=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
       dispatch(fastcount())
    
       
