@@ -13,7 +13,7 @@ export default function ProductInfo({data}) {
      
     const userdetail=localStorage.getItem('userdetail')
     const parse=JSON.parse(userdetail)
-    const response=await axios.post('http://localhost:8080/product/cart',{name:data.name,category:data.category,price:data.price,image:data.image,uid:parse._id})
+    const response=await axios.post('https://ecomerce-backend-1zbn.onrender.com/product/cart',{name:data.name,category:data.category,price:data.price,image:data.image,uid:parse._id})
     const {message}=response.data
     if(message=='f'){
       alert('Product already have been added to cart')
