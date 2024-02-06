@@ -22,7 +22,7 @@ export default function login() {
     const[password,setpassword]=useState()
 
     async function submit(){
-      const response=await axios.post('https://ecomercebackend-brown.vercel.app/product/login',{email:email,password:password})
+      const response=await axios.post('https://ecomerce-backend-1zbn.onrender.com/product/login',{email:email,password:password})
       const {message}=response.data
       if(message=='failed'){
         alert('wrong email and password')
