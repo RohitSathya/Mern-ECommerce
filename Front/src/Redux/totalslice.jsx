@@ -33,7 +33,7 @@ export const totalslice=createSlice({
                 co+=x
 
             }
-            const b=Number(prevtotal)+Number(co).toFixed(2)
+            const b=Number(prevtotal)+Number(co)
          
             state.total=b
 
