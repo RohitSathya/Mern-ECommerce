@@ -1,3 +1,5 @@
+Deployed project in live server (https://ecomerce-foront.vercel.app/)
+
 List the technologies and frameworks used in project
 - MongoDB
 - Express.js
