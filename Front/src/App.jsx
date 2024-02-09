@@ -29,25 +29,26 @@ function App() {
 
   const products = [
   {
-    name: 'Hervomatin',
-    category: 'Oil',
-    price: '5.66 USD',
-    image: 'https://images.pexels.com/photos/672051/pexels-photo-672051.jpeg?auto=compress&cs=tinysrgb&w=600',
+    name: 'Iphone13',
+    category: 'Mobile',
+    price: '400.66 USD',
+    image: 'https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_UF1000,1000_QL80_.jpg',
     count: 1,
-    description: 'High-quality hair oil for nourishment and shine',
-    brand: 'Hervomatin',
-    rating: 4.0,
+    description: 'Secured and Ultra fast mobile',
+    brand: 'Apple',
+    rating: 5.0,
     t: ['Argan Oil', 'Coconut Oil', 'Vitamin E'],
     ratingimg:four,
-    pur:'50+ purchased last month',
-    mrp:'11.32',
+    pur:'500+ purchased last month',
+    mrp:'800.32',
     dis:'50%',
-    ati: [
-      'Enriched with natural ingredients for optimal hair health.',
-      'Provides a lustrous shine and smooth texture to your hair.',
-      'Formulated with Argan Oil, Coconut Oil, and Vitamin E.',
-      'Suitable for all hair types.',
-      'Packaged in a convenient and easy-to-use bottle.'
+     ati: [
+      'Sleek design and premium build quality, powered by cutting-edge A-series chips.',
+       'Leading-edge camera technology with features like Portrait mode and Night mode.',
+       'Integration into the cohesive Apple ecosystem, ensuring seamless connectivity between devices.',
+       'Emphasis on security and privacy, featuring Face ID or Touch ID for biometric authentication.',
+       'Regular updates and support, maintaining the longevity and performance of the iPhone.'
+'
     ]
   },
   {
