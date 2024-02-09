@@ -32,7 +32,7 @@ function App() {
     name: 'Iphone13',
     category: 'Mobile',
     price: '400.66 USD',
-    image: 'https://images.pexels.com/photos/1647976/pexels-photo-1647976.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'https://m.media-amazon.com/images/I/71xb2xkN5qL._AC_UF1000,1000_QL80_.jpg',
     count: 1,
     description: 'Secured and Ultra fast mobile',
     brand: 'Apple',
