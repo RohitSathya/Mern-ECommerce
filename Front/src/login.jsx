@@ -52,7 +52,7 @@ export default function login() {
         </div><br/>
         <h3 style={{paddingLeft:'38px',fontWeight:'550',paddingTop:'10px'}}>Password</h3>
         <div className='ii2'>
-        <input type='text' style={{width:'300px',height:'28px',fontWeight:'550',fontFamily:'sans-serif',position:'fixed',paddingLeft:'5px'}} value={password} onChange={(e)=>setpassword(e.target.value)}></input>
+        <input type='password' style={{width:'300px',height:'28px',fontWeight:'550',fontFamily:'sans-serif',position:'fixed',paddingLeft:'5px'}} value={password} onChange={(e)=>setpassword(e.target.value)}></input>
         </div><br/>
         <div className='butt'>
         <button style={{background:'#FFD814',borderColor:'#FCD200',borderRadius:'8px',width:'310px',height:'30px',fontWeight:'560'}} onClick={submit}>Sign in</button>
