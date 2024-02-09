@@ -48,7 +48,7 @@ function App() {
        'Integration into the cohesive Apple ecosystem, ensuring seamless connectivity between devices.',
        'Emphasis on security and privacy, featuring Face ID or Touch ID for biometric authentication.',
        'Regular updates and support, maintaining the longevity and performance of the iPhone.'
-'
+
     ]
   },
   {
