@@ -77,31 +77,31 @@ function App() {
     ]
     
   },
-  {
-    name: 'LipStick-Pink',
-    category: 'Cosmetics',
-    price: '200.00 USD',
-    image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600',
+     {
+    name: 'CalvinKlein-Perfume',
+    category: 'Perfumes',
+    price: '370.66 USD',
+    image: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHByb2R1Y3RzfGVufDB8fDB8fHww',
     count: 3,
-    description: 'Vibrant pink lipstick for a bold and beautiful look',
-    brand: 'CosmeticGlow',
-    rating: 5.0,
-    type: 'Matte',
-    ratingimg:five
+    description: 'Calvin Klein perfume for a captivating and long-lasting fragrance',
+    brand: 'Calvin Klein',
+    rating: 4.0,
+    scent: 'Floral and Woody',
+    ratingimg:four
     ,
-    pur:'100+ purchased last month'
+    pur:'250+ purchased last month'
     ,
-    mrp:'400.00',
-    dis:'50%'
-    ,
+    mrp:'741.32',
+    dis:'50%',
     ati: [
-      'Intensely pigmented for a vibrant and long-lasting color.',
-      'Matte finish for a bold and trendy look.',
-      'Rated 5.0 stars by satisfied customers.',
-      'Ideal for creating a statement lip.',
-      'Suitable for various occasions and makeup styles.'
+      'Calvin Klein perfume with a captivating floral and woody scent.',
+      'Rated 4.0 stars by satisfied customers.',
+      'Ideal for both daytime and evening wear.',
+      'Long-lasting fragrance for all-day freshness.',
+      'Packaged in an elegant bottle for a luxurious touch.'
     ]
-  },
+  }
+,
   {
     name: 'Jumper-Sneakers',
     category: 'Shoe',
@@ -224,27 +224,28 @@ function App() {
     ]
   },
   {
-    name: 'CalvinKlein-Perfume',
-    category: 'Perfumes',
-    price: '370.66 USD',
-    image: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHByb2R1Y3RzfGVufDB8fDB8fHww',
+    name: 'LipStick-Pink',
+    category: 'Cosmetics',
+    price: '200.00 USD',
+    image: 'https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=600',
     count: 3,
-    description: 'Calvin Klein perfume for a captivating and long-lasting fragrance',
-    brand: 'Calvin Klein',
-    rating: 4.0,
-    scent: 'Floral and Woody',
-    ratingimg:four
+    description: 'Vibrant pink lipstick for a bold and beautiful look',
+    brand: 'CosmeticGlow',
+    rating: 5.0,
+    type: 'Matte',
+    ratingimg:five
     ,
-    pur:'250+ purchased last month'
+    pur:'100+ purchased last month'
     ,
-    mrp:'741.32',
-    dis:'50%',
+    mrp:'400.00',
+    dis:'50%'
+    ,
     ati: [
-      'Calvin Klein perfume with a captivating floral and woody scent.',
-      'Rated 4.0 stars by satisfied customers.',
-      'Ideal for both daytime and evening wear.',
-      'Long-lasting fragrance for all-day freshness.',
-      'Packaged in an elegant bottle for a luxurious touch.'
+      'Intensely pigmented for a vibrant and long-lasting color.',
+      'Matte finish for a bold and trendy look.',
+      'Rated 5.0 stars by satisfied customers.',
+      'Ideal for creating a statement lip.',
+      'Suitable for various occasions and makeup styles.'
     ]
   },
   {
