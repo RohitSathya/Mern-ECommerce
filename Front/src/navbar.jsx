@@ -33,7 +33,7 @@ export default function navbar({data,func,namess,dco}) {
     const userdetail=localStorage.getItem('userdetail')
     const parse=JSON.parse(userdetail)
          
-      const response=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
+      const response=await axios.get(`https://ecomercebackend-gamma.vercel.app/product/getcart/${parse._id}`)
       const {message}=response.data
       console.log('bugvna'+message)
       if(message=='f'){
