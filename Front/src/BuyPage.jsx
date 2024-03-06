@@ -50,7 +50,7 @@ export default function BuyPage({data,data2,func}) {
       async function getad(){
         const userdetail=localStorage.getItem('userdetail')
         const parse=JSON.parse(userdetail)
-        const response=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getaddress/${parse._id}`)
+        const response=await axios.get(`https://ecomercebackend-gamma.vercel.app/product/getaddress/${parse._id}`)
         const {message}=response.data
         console.log(message)
         if(message=='s'){
@@ -82,7 +82,7 @@ export default function BuyPage({data,data2,func}) {
       if(mf!==0){
         const userdetail=localStorage.getItem('userdetail')
         const parse=JSON.parse(userdetail)
-        const upad=await axios.put(`https://ecomerce-backend-1zbn.onrender.com/product/updateaddress/${parse._id}/${name}/${pno}/${Landmark}/${pincode}/${area}`)
+        const upad=await axios.put(`https://ecomercebackend-gamma.vercel.app/product/updateaddress/${parse._id}/${name}/${pno}/${Landmark}/${pincode}/${area}`)
         sfl(fl+1)
       }
       else{
@@ -90,7 +90,7 @@ export default function BuyPage({data,data2,func}) {
         const parse=JSON.parse(userdetail)
         console.log(parse._id)
   
-        const response=await axios.post('https://ecomerce-backend-1zbn.onrender.com/product/address',{country:country,name:name,phoneno:pno,pincode:pincode,area:area,landmark:Landmark,uid:parse._id})
+        const response=await axios.post('https://ecomercebackend-gamma.vercel.app/product/address',{country:country,name:name,phoneno:pno,pincode:pincode,area:area,landmark:Landmark,uid:parse._id})
         const {addressdata}=response.data
         console.log(addressdata)
         sfl(fl+1)
@@ -129,12 +129,12 @@ export default function BuyPage({data,data2,func}) {
     const parse=JSON.parse(userdetail)
    async function dcart(){
  
-     const res=await axios.delete(`https://ecomerce-backend-1zbn.onrender.com/product/dcart/${parse._id}`)
+     const res=await axios.delete(`https://ecomercebackend-gamma.vercel.app/product/dcart/${parse._id}`)
      const {message}=res.data
      if(message=='s'){
       dispatch(fastcount())
       dispatch(postorder(ord))
-      const res=await axios.post(`https://ecomerce-backend-1zbn.onrender.com/product/order`,{ord})
+      const res=await axios.post(`https://ecomercebackend-gamma.vercel.app/product/order`,{ord})
       console.log(JSON.stringify(res.data)+'kesav')
       
      }
