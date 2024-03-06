@@ -13,13 +13,13 @@ export default function ProductInfo({data}) {
      
     const userdetail=localStorage.getItem('userdetail')
     const parse=JSON.parse(userdetail)
-    const response=await axios.post('https://ecomerce-backend-1zbn.onrender.com/product/cart',{name:data.name,category:data.category,price:data.price,image:data.image,uid:parse._id})
+    const response=await axios.post('https://ecomercebackend-gamma.vercel.app/product/cart',{name:data.name,category:data.category,price:data.price,image:data.image,uid:parse._id})
     const {message}=response.data
     if(message=='f'){
       alert('Product already have been added to cart')
     }
     else{
-      const count=await axios.get(`https://ecomerce-backend-1zbn.onrender.com/product/getcart/${parse._id}`)
+      const count=await axios.get(`https://ecomercebackend-gamma.vercel.app/product/getcart/${parse._id}`)
       dispatch(fastcount())
    
       
